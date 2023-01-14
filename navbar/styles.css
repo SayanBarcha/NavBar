@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(https://media.istockphoto.com/id/1340597152/photo/male-profile-silhouette-sad-or-loneliness-young-man-on-black-background-unrecognizable-person.jpg?b=1&s=170667a&w=0&k=20&c=3-cGxAwO2NVqg84E631Odx9FsGh8ck5X5TSbasXxYBQ=);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;   
+    color: #fff;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 5px 5px rgb(94, 94, 94);
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+li{
+    list-style: none;
+    font-size: larger;
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+    color: rgb(105, 105, 105);
+}
+li:hover{
+    color: rgb(217, 39, 74);
+}
+li::after{
+    content: ' ';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -2px;
+    background-color: crimson;
+    transition: .4s;
+}
+li:hover::after{
+    width: 100%;
+}
+h1{
+    cursor: pointer;
+}
+span{
+    color: crimson;
+}
+.btn{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 150px;
+    padding: 10px;
+    background-color: crimson;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 50px;
+    border: 2px solid rgb(164, 0, 33);
+    margin: 0px 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 2px 2px 5px 5px rgb(169, 43, 68);
+    background-color: rgb(164, 0, 33);
+    border-color: crimson;
+    color: rgb(105, 105, 105);
+}
